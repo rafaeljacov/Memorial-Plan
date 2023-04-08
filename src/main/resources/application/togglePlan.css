@@ -1,0 +1,10 @@
+
+.default {
+    -fx-background-color: #B3D5FF;
+    -fx-text-fill: #001024;
+}
+
+.toggle {
+    -fx-background-color: #B3D5FF;
+    -fx-text-fill: #001024;
+}

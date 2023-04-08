@@ -3,6 +3,6 @@ module com.example.memorialplangui {
     requires javafx.fxml;
 
 
-    opens com.example.memorialplangui to javafx.fxml;
-    exports com.example.memorialplangui;
+    opens application to javafx.fxml;
+    exports application;
 }

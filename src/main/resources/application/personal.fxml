@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PersonalController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="139.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1280.0" />
+      <Label layoutX="283.0" layoutY="30.0" text="Personal  Info &amp; Category" textFill="#f2f3f4">
+         <font>
+            <Font name="System Bold" size="56.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="211.0" text="Name" textFill="#404c5b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="76.0" layoutY="260.0" prefHeight="56.0" prefWidth="415.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="640.0" layoutY="211.0" text="Email" textFill="#404c5b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="621.0" layoutY="260.0" prefHeight="56.0" prefWidth="415.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="92.0" layoutY="361.0" text="Address" textFill="#404c5b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="76.0" layoutY="410.0" prefHeight="56.0" prefWidth="415.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="637.0" layoutY="361.0" text="Gender" textFill="#404c5b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="863.0" layoutY="361.0" text="Age" textFill="#404c5b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="843.0" layoutY="410.0" prefHeight="56.0" prefWidth="193.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="92.0" layoutY="497.0" text="Category" textFill="#404c5b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="category" layoutX="76.0" layoutY="543.0" prefHeight="56.0" prefWidth="415.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2; -fx-background-color: white;" />
+      <TextField layoutX="621.0" layoutY="543.0" prefHeight="56.0" prefWidth="415.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="634.0" layoutY="497.0" text="Number" textFill="#404c5b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="gender" layoutX="621.0" layoutY="410.0" prefHeight="56.0" prefWidth="193.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2; -fx-background-color: white;" />
+      <Label fx:id="lotPrice" layoutX="92.0" layoutY="631.0" text="Lot Price: ₱ 0.00">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="783.0" text="© Aeterna Vale Memorial Services 2010" textFill="#7f8791" />
+      <Button fx:id="button" layoutX="1036.0" layoutY="705.0" mnemonicParsing="false" onAction="#next" prefHeight="78.0" prefWidth="196.0" style="-fx-background-radius: 16; -fx-background-color: #00316D;" text="Next" textFill="#f2f3f4">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
