@@ -8,3 +8,16 @@
     -fx-background-color: #B3D5FF;
     -fx-text-fill: #001024;
 }
+
+.card {
+    -fx-background-color: #E6E8EA;
+    -fx-background-radius: 16;
+}
+
+.card-toggle {
+    -fx-background-color: white;
+}
+
+.label-select-fill {
+    -fx-text-fill: #001024;
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NonYearSummaryController">
+   <children>
+      <Label layoutX="476.0" layoutY="79.0" text="Plan Summary" textFill="#1d82ff">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="home" fitHeight="56.0" fitWidth="56.0" layoutX="51.0" layoutY="51.0" onMouseClicked="#goHome" onMouseEntered="#hoverIn" onMouseExited="#hoverOut" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@homeIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="plan" layoutX="640.0" layoutY="191.0" prefHeight="45.0" prefWidth="540.0" style="-fx-alignment: center;" text="Plan" textFill="#001024">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="category" layoutY="191.0" prefHeight="45.0" prefWidth="540.0" style="-fx-alignment: center;" text="Category" textFill="#001024">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="308.0" text="Lot Price" textFill="#404c5b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lotPrice" layoutX="301.0" layoutY="306.0" prefHeight="40.0" prefWidth="160.0" style="-fx-alignment: center_right;" text="Price" textAlignment="RIGHT" textFill="#001024">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="374.0" text="VAT (12%)" textFill="#404c5b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="vat" layoutX="301.0" layoutY="372.0" prefHeight="40.0" prefWidth="160.0" style="-fx-alignment: center_right;" text="Price" textAlignment="RIGHT" textFill="#001024">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="434.0" text="Processing" textFill="#404c5b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="469.0" text="Fee" textFill="#404c5b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="processFee" layoutX="301.0" layoutY="449.0" prefHeight="40.0" prefWidth="160.0" style="-fx-alignment: center_right;" text="Price" textAlignment="RIGHT" textFill="#001024">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Line endX="327.0" layoutX="209.0" layoutY="530.0" startX="-100.0" stroke="#1d82ff" strokeWidth="2.0" />
+      <Label layoutX="117.0" layoutY="568.0" text="Selling Price" textFill="#001024">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="sellPrice" layoutX="322.0" layoutY="568.0" prefHeight="40.0" prefWidth="160.0" style="-fx-alignment: center_right;" text="Price" textAlignment="RIGHT" textFill="#1d82ff">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="699.0" layoutY="301.0" text="Discount" textFill="#404c5b">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="discountRate" layoutX="724.0" layoutY="351.0" text="(15%)" textFill="#404c5b">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="discount" layoutX="917.0" layoutY="318.0" prefHeight="40.0" prefWidth="160.0" style="-fx-alignment: center_right;" text="Price" textAlignment="RIGHT" textFill="#001024">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Pane layoutX="643.0" layoutY="443.0" prefHeight="309.0" prefWidth="534.0" style="-fx-border-color: #1D82FF; -fx-border-width: 3; -fx-border-radius: 16; -fx-background-color: transparent;">
+         <children>
+            <Label layoutX="171.0" layoutY="54.0" prefHeight="57.0" prefWidth="192.0" style="-fx-alignment: center;" text="Total:" textAlignment="RIGHT" textFill="#001024">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="total" layoutY="141.0" prefHeight="57.0" prefWidth="534.0" style="-fx-alignment: center;" text="Price" textAlignment="RIGHT" textFill="#1d82ff">
+               <font>
+                  <Font name="System Bold" size="56.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

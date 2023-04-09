@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
@@ -13,7 +14,7 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="139.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1280.0" />
       <Label layoutX="283.0" layoutY="30.0" text="Personal  Info &amp; Category" textFill="#f2f3f4">
          <font>
-            <Font name="System Bold" size="56.0" />
+            <Font size="56.0" />
          </font>
       </Label>
       <Label layoutX="92.0" layoutY="211.0" text="Name" textFill="#404c5b">
@@ -21,17 +22,17 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="76.0" layoutY="260.0" prefHeight="56.0" prefWidth="415.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
+      <TextField fx:id="name" layoutX="76.0" layoutY="260.0" prefHeight="56.0" prefWidth="415.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
          <font>
             <Font size="24.0" />
          </font>
       </TextField>
-      <Label layoutX="640.0" layoutY="211.0" text="Email" textFill="#404c5b">
+      <Label layoutX="660.0" layoutY="211.0" text="Email" textFill="#404c5b">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="621.0" layoutY="260.0" prefHeight="56.0" prefWidth="415.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
+      <TextField fx:id="email" layoutX="636.0" layoutY="260.0" prefHeight="56.0" prefWidth="415.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
          <font>
             <Font size="24.0" />
          </font>
@@ -41,22 +42,22 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="76.0" layoutY="410.0" prefHeight="56.0" prefWidth="415.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
+      <TextField fx:id="address" layoutX="76.0" layoutY="410.0" prefHeight="56.0" prefWidth="415.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
          <font>
             <Font size="24.0" />
          </font>
       </TextField>
-      <Label layoutX="637.0" layoutY="361.0" text="Gender" textFill="#404c5b">
+      <Label layoutX="660.0" layoutY="361.0" text="Gender" textFill="#404c5b">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="863.0" layoutY="361.0" text="Age" textFill="#404c5b">
+      <Label layoutX="881.0" layoutY="361.0" text="Age" textFill="#404c5b">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="843.0" layoutY="410.0" prefHeight="56.0" prefWidth="193.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
+      <TextField fx:id="age" layoutX="858.0" layoutY="410.0" onKeyPressed="#numbersOnly" prefHeight="56.0" prefWidth="193.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
          <font>
             <Font size="24.0" />
          </font>
@@ -67,27 +68,25 @@
          </font>
       </Label>
       <ChoiceBox fx:id="category" layoutX="76.0" layoutY="543.0" prefHeight="56.0" prefWidth="415.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2; -fx-background-color: white;" />
-      <TextField layoutX="621.0" layoutY="543.0" prefHeight="56.0" prefWidth="415.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2;">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </TextField>
-      <Label layoutX="634.0" layoutY="497.0" text="Number" textFill="#404c5b">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <ChoiceBox fx:id="gender" layoutX="621.0" layoutY="410.0" prefHeight="56.0" prefWidth="193.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2; -fx-background-color: white;" />
-      <Label fx:id="lotPrice" layoutX="92.0" layoutY="631.0" text="Lot Price: ₱ 0.00">
+      <ChoiceBox fx:id="gender" layoutX="637.0" layoutY="410.0" prefHeight="56.0" prefWidth="193.0" style="-fx-background-radius: 8; -fx-border-color: #404C5B; -fx-border-radius: 8; -fx-border-width: 2; -fx-background-color: white;" />
+      <Label fx:id="lotPrice" layoutX="637.0" layoutY="549.0" text="Lot Price: ₱ 0.00">
          <font>
             <Font size="32.0" />
          </font>
       </Label>
-      <Label layoutX="76.0" layoutY="783.0" text="© Aeterna Vale Memorial Services 2010" textFill="#7f8791" />
+      <Label layoutX="75.0" layoutY="750.0" text="© Aeterna Vale Memorial Services 2010" textFill="#7f8791" />
       <Button fx:id="button" layoutX="1036.0" layoutY="705.0" mnemonicParsing="false" onAction="#next" prefHeight="78.0" prefWidth="196.0" style="-fx-background-radius: 16; -fx-background-color: #00316D;" text="Next" textFill="#f2f3f4">
          <font>
             <Font size="24.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
+      <Label fx:id="errorMessage" contentDisplay="CENTER" layoutX="248.0" layoutY="630.0" prefHeight="45.0" prefWidth="776.0" style="-fx-alignment: center;" text="All fields must be completed before proceeding" textFill="#dd4f4f" visible="false">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

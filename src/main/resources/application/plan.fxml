@@ -5,25 +5,153 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="832.0" prefWidth="1280.0" stylesheets="@togglePlan.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PlanController">
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="832.0" prefWidth="1280.0" stylesheets="@togglePlan.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PlanController">
    <children>
+      <Pane fx:id="yearPane" layoutY="234.0" prefHeight="435.0" prefWidth="1280.0" style="-fx-background-color: #B3D5FF;">
+         <children>
+            <Pane fx:id="card1" layoutX="78.0" layoutY="67.0" onMouseClicked="#cardClick1" prefHeight="361.0" prefWidth="336.0" styleClass="card">
+               <children>
+                  <Label fx:id="label1" layoutX="113.0" layoutY="42.0" text="One Year" textFill="#404c5b">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="intRate1" layoutX="95.0" layoutY="121.0" text="Interest Rate:" textFill="#404c5b">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="percent1" layoutX="98.0" layoutY="167.0" text="15%" textFill="#404c5b">
+                     <font>
+                        <Font size="70.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="cardCircle1" fill="DODGERBLUE" layoutX="40.0" layoutY="40.0" radius="16.0" stroke="#001024" strokeType="INSIDE" strokeWidth="6.0" visible="false" />
+               </children>
+            </Pane>
+            <Pane fx:id="card2" layoutX="472.0" layoutY="67.0" onMouseClicked="#cardClick2" prefHeight="361.0" prefWidth="336.0" styleClass="card">
+               <children>
+                  <Label fx:id="label2" layoutX="113.0" layoutY="42.0" text="Two Years" textFill="#404c5b">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="intRate2" layoutX="95.0" layoutY="121.0" text="Interest Rate:" textFill="#404c5b">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="percent2" layoutX="98.0" layoutY="167.0" text="25%" textFill="#404c5b">
+                     <font>
+                        <Font size="70.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="cardCircle2" fill="DODGERBLUE" layoutX="40.0" layoutY="40.0" radius="16.0" stroke="#001024" strokeType="INSIDE" strokeWidth="6.0" visible="false" />
+               </children>
+            </Pane>
+            <Pane fx:id="card3" layoutX="872.0" layoutY="67.0" onMouseClicked="#cardClick3" prefHeight="361.0" prefWidth="336.0" styleClass="card">
+               <children>
+                  <Label fx:id="label3" layoutX="100.0" layoutY="42.0" text="Three Years" textFill="#404c5b">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="intRate3" layoutX="95.0" layoutY="121.0" text="Interest Rate:" textFill="#404c5b">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="percent3" layoutX="98.0" layoutY="167.0" text="50%" textFill="#404c5b">
+                     <font>
+                        <Font size="70.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="cardCircle3" fill="DODGERBLUE" layoutX="40.0" layoutY="40.0" radius="16.0" stroke="#001024" strokeType="INSIDE" strokeWidth="6.0" visible="false" />
+               </children>
+            </Pane>
+         </children></Pane>
+      <Pane fx:id="nonYearPane" layoutY="234.0" prefHeight="435.0" prefWidth="1280.0" style="-fx-background-color: #B3D5FF;" visible="false">
+         <children>
+            <Pane fx:id="cardSpot" layoutX="78.0" layoutY="67.0" onMouseClicked="#cardClickSpot" prefHeight="361.0" prefWidth="336.0" styleClass="card">
+               <children>
+                  <Label fx:id="labelSpot" layoutX="108.0" layoutY="39.0" text="Spot Cash" textFill="#404c5b">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="discountSpot" layoutX="117.0" layoutY="120.0" text="Discount:" textFill="#404c5b">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="percentSpot" layoutX="98.0" layoutY="167.0" text="15%" textFill="#404c5b">
+                     <font>
+                        <Font size="70.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="cardCircleSpot" fill="DODGERBLUE" layoutX="40.0" layoutY="40.0" radius="16.0" stroke="#001024" strokeType="INSIDE" strokeWidth="6.0" visible="false" />
+               </children>
+            </Pane>
+            <Pane fx:id="card30" layoutX="472.0" layoutY="67.0" onMouseClicked="#cardClick30" prefHeight="361.0" prefWidth="336.0" styleClass="card">
+               <children>
+                  <Label fx:id="label30" layoutX="121.0" layoutY="39.0" text="30 Days" textFill="#404c5b">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="discount30" layoutX="117.0" layoutY="120.0" text="Discount:" textFill="#404c5b">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="percent30" layoutX="98.0" layoutY="167.0" text="10%" textFill="#404c5b">
+                     <font>
+                        <Font size="70.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="cardCircle30" fill="DODGERBLUE" layoutX="40.0" layoutY="40.0" radius="16.0" stroke="#001024" strokeType="INSIDE" strokeWidth="6.0" visible="false" />
+               </children>
+            </Pane>
+            <Pane fx:id="card60" layoutX="872.0" layoutY="67.0" onMouseClicked="#cardClick60" prefHeight="361.0" prefWidth="336.0" styleClass="card">
+               <children>
+                  <Label fx:id="label60" layoutX="121.0" layoutY="39.0" text="60 Days" textFill="#404c5b">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="discount60" layoutX="117.0" layoutY="120.0" text="Discount:" textFill="#404c5b">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="percent60" layoutX="117.0" layoutY="166.0" text="5%" textFill="#404c5b">
+                     <font>
+                        <Font size="70.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="cardCircle60" fill="DODGERBLUE" layoutX="40.0" layoutY="40.0" radius="16.0" stroke="#001024" strokeType="INSIDE" strokeWidth="6.0" visible="false" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="139.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1280.0" />
       <Label layoutX="498.0" layoutY="30.0" text="Select Plan" textFill="#f2f3f4">
          <font>
             <Font size="56.0" />
          </font>
       </Label>
-      <Pane fx:id="yearPane" layoutY="234.0" prefHeight="598.0" prefWidth="1280.0" style="-fx-background-color: #B3D5FF;" />
       <Button fx:id="yearButton" layoutX="69.0" layoutY="139.0" mnemonicParsing="false" onAction="#handleYearButton" prefHeight="96.0" prefWidth="360.0" styleClass="default" text="Yearly" textFill="#7f8791">
          <font>
             <Font size="32.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
-         </cursor></Button>
+         </cursor>
+      </Button>
       <Button fx:id="nonYearButton" layoutX="429.0" layoutY="139.0" mnemonicParsing="false" onAction="#handleNonYearButton" prefHeight="96.0" prefWidth="360.0" text="Non - Yearly" textFill="#7f8791">
          <font>
             <Font size="32.0" />
@@ -34,5 +162,30 @@
       </Button>
       <Rectangle fx:id="indicator1" arcHeight="5.0" arcWidth="5.0" fill="#00316d" height="7.0" layoutX="69.0" layoutY="139.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="360.0" />
       <Rectangle fx:id="indicator2" arcHeight="5.0" arcWidth="5.0" fill="#00316d" height="7.0" layoutX="429.0" layoutY="139.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="360.0" />
+      <Pane layoutY="668.0" prefHeight="179.0" prefWidth="1280.0" style="-fx-background-color: #B3D5FF;">
+         <children>
+            <Button layoutX="79.0" layoutY="51.0" mnemonicParsing="false" onAction="#back" prefHeight="78.0" prefWidth="196.0" style="-fx-background-radius: 16; -fx-background-color: #36629A;" text="Back" textFill="#f2f3f4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="999.0" layoutY="51.0" mnemonicParsing="false" onAction="#confirm" prefHeight="78.0" prefWidth="196.0" style="-fx-background-radius: 16; -fx-background-color: #00316D;" text="Confirm" textFill="#f2f3f4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="errorMessage" layoutX="408.0" layoutY="68.0" text="Please select a plan to proceed" textFill="#dd4f4f" visible="false">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
