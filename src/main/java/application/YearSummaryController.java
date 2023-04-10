@@ -17,7 +17,6 @@ public class YearSummaryController {
     @FXML
     public Label category, plan, lotPrice, vat, sellPrice, downPay, balance, intRate, interest, contract, yearly;
 
-
     public void hoverIn(MouseEvent event) {
         home.setOpacity(1);
     }
