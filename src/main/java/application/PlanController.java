@@ -34,35 +34,35 @@ public class PlanController {
     public void handleYearButton(ActionEvent e) {
         if (!yearPane.isVisible()) {
             planSelected = null;
+            indicator1.setVisible(true);
+            indicator2.setVisible(false);
+
+            yearButton.getStyleClass().add("toggle");
+            nonYearButton.getStyleClass().remove("toggle");
+
+            yearPane.setVisible(true);
+            nonYearPane.setVisible(false);
+
+            resetStylesNonYear();
         }
 
-        indicator1.setVisible(true);
-        indicator2.setVisible(false);
-
-        yearButton.getStyleClass().add("toggle");
-        nonYearButton.getStyleClass().remove("toggle");
-
-        yearPane.setVisible(true);
-        nonYearPane.setVisible(false);
-
-        resetStylesNonYear();
     }
 
     public void handleNonYearButton(ActionEvent e) {
         if (!nonYearPane.isVisible()) {
             planSelected = null;
+            indicator1.setVisible(false);
+            indicator2.setVisible(true);
+
+            yearButton.getStyleClass().remove("default");
+            yearButton.getStyleClass().remove("toggle");
+            nonYearButton.getStyleClass().add("toggle");
+
+            yearPane.setVisible(false);
+            nonYearPane.setVisible(true);
+
+            resetStylesYear();
         }
-        indicator1.setVisible(false);
-        indicator2.setVisible(true);
-
-        yearButton.getStyleClass().remove("default");
-        yearButton.getStyleClass().remove("toggle");
-        nonYearButton.getStyleClass().add("toggle");
-
-        yearPane.setVisible(false);
-        nonYearPane.setVisible(true);
-
-        resetStylesYear();
     }
 
 

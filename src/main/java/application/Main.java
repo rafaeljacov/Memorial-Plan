@@ -11,6 +11,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("personal.fxml"));
         Scene scene = new Scene(loader.load());
+
         stage.setTitle("Aeterna Vale Memorial Services");
         stage.setScene(scene);
         stage.setResizable(false);
